@@ -88,14 +88,17 @@ li a:link {
 
   #spoiler {
     border-style: solid;
-    float: left;
     width: 350px;
   }
 
   .spoiler {
     border-style: solid;
     width: 250px;
-    float: right;
+  }
+
+  #passbox {
+    border-style: solid;
+    width: 500px;
   }
 /* end basic body styling section */
 
