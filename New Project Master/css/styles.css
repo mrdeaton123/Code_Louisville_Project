@@ -87,7 +87,9 @@ li a:link {
   }
 
   #spoiler {
+    border-style: solid;
     float: left;
+    width: 350px;
   }
 
   .spoiler {
