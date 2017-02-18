@@ -80,28 +80,39 @@ li a:link {
       background: linear-gradient(to bottom right, #e6e6ff, #9999ff);
   }
 
-  #myForm {
+  
+  .myForm {
     border-style: solid;
     width: 250px;
-    margin: 0px 0px 20px 50px;
+    height: 200px;
+    margin: 50px 10px 50px 50px;
+    position: absolute;
+
   }
 
   #spoiler {
     float: left;
     border-style: solid;
     width: 350px;
-
+    margin: 5px 10px 5px 20px;
+    position: static;
   }
 
   .spoiler {
     border-style: solid;
     width: 250px;
-    float: right;
+    margin: 5px 10px 5px 20px;
   }
 
   #passbox {
     border-style: solid;
     width: 500px;
+    margin: 100px 10px 5px 10px;
+    position: relative;
+  }
+
+  #footer {
+    position: fixed;
   }
 /* end basic body styling section */
 
