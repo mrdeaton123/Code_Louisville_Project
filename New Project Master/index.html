@@ -30,16 +30,17 @@
 						<li class="forms"><a href="content/forms.html">Forms Practice</a></li>
 						<li class="spoilers"><a href="content/spoilers.html">Spoiler Practice</a></li>
 						<li class="boxes"><a href="content/light.html">Light Boxes</a></li>
-						<li class="password"><a href="content/password.html">Password</a></li>
+						<li class="password"><a href="content/password.html">Password</a></li>			
 						<li class="about"><a href="content/about.html">About</a></li>
 						<li class="contact"><a href="content/contact.html">Contact</a></li>
 				</ul>
 			</nav>
 
-			<!-- Sample Forms Section -->
-			<div id="myForm">
+		<div id="wrapper">
+		<!-- Sample Forms Section -->
+		<div class="myForm">
         <form class="form" action="action_page.php" method="post">
-          First Name <br>
+          First Name <div id="myForm"><br>
           <input type="text" name="firstname"><br><br>
           Last Name <br>
           <input type="text" name="lastname"><br><br>
@@ -47,7 +48,7 @@
         </form>
 		</div>
 
-		<div id="myForm">
+		<div class="myForm">
 		  <form class="form" action="action_page.php" method="get">
 				How much wood would a woodchuck chuck if a woodchuck could chuck wood?<br>
 				All the wood he could! <input type="radio" name="answer1"><br>
@@ -57,6 +58,7 @@
 			</form>
 		</div>
 
+<!-- Practice Spoiler section -->
 		<div id="spoiler">
 			<p class="spoiler">THIS IS SAMPLE SPOILER TEXT</p>
 
@@ -85,6 +87,28 @@
 		</form>
 
 
+<!-- Practice Password entry and confirmation box section -->
+			<form id="passbox" action="#" method="post">
+				<p>
+					<label for="username">Username</label>
+					<input id="username" name="username" type="text">
+				</p>
+				<p>
+					<label for="password">Password</label>
+					<input id="password" name="password" type="password">
+					<span>Enter a password longer than 8 characters</span>
+				</p>
+				<p>
+					<label for="confirm_password">Confirm Password</label>
+					<input id="confirm_password" name="confirm_password" type="password">
+					<span>Confirm your password</span>
+				</p>
+				<p>
+					<input type="submit" value="SUBMIT">
+				</p>
+			</form>
+		</div>
+
 		<footer>
 			<div class="footerLogo">
 				 <img></img>
@@ -95,8 +119,6 @@
 				<a href="https://www.linkedin.com/hp/?dnr=f2gitYi39X1bee1CbWritfQ22vpmS7B0Wy_X&trk=nav_responsive_tab_home"><img src="img/linkedin.png" alt="Linkedin Logo" class="social-icon"></a> <!-- linkedin profile -->
 			</div>
 		</footer>
-
-
 
 	<script type="text/javascript" src="js/scripts.js" defer></script> <!-- loads JS file after DOM has loaded -->
 	</body>
