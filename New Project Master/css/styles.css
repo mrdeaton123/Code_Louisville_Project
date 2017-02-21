@@ -80,39 +80,8 @@ li a:link {
       background: linear-gradient(to bottom right, #e6e6ff, #9999ff);
   }
 
-  
-  .myForm {
-    border-style: solid;
-    width: 250px;
-    height: 200px;
-    margin: 50px 10px 50px 50px;
-    position: absolute;
-
-  }
-
-  #spoiler {
-    float: left;
-    border-style: solid;
-    width: 350px;
-    margin: 5px 10px 5px 20px;
-    position: static;
-  }
-
-  .spoiler {
-    border-style: solid;
-    width: 250px;
-    margin: 5px 10px 5px 20px;
-  }
-
-  #passbox {
-    border-style: solid;
-    width: 500px;
-    margin: 100px 10px 5px 10px;
-    position: relative;
-  }
-
   #footer {
-    position: fixed;
+
   }
 /* end basic body styling section */
 
@@ -122,6 +91,8 @@ li a:link {
 
 /* Styles the page for screen sizes less than 480px */
 @media (max-width: 480px) {
+  
+}
 
 /* Styles page for screen sizes between 480 and 960 px */
 @media (min-width: 481px) and (max-width: 959px) {
