@@ -21,3 +21,22 @@ $(document).ready(function(){
     $(".spoiler").show();
   });
 });
+
+/* Following code creates a light box when images are clicked on in the page */
+var $overlay=$('<div id="overlay"></div>'); /* Creates a new variable titled overlay and fills it with a new div with id=overlay */
+var $image=$("<img>"); /* Creates a new variable titled image and fills it with a new img tag */
+var $caption=$("<p></p>"); /* Creates a new variable titled caption and fills it with a new paragraph */
+$overlay.append($image); /* Creates an image to append to the overlay */
+$overlay.append($caption); /*Appends the overlay with a caption */
+$("body").append($overlay); /* Adds the overlay proper */
+$("#imageGallery a").click(function(event) { /*targets the id imageGallery links on click and performs following function */
+  event.preventDefault(); /* Prevents the default action */
+  var imageLocation=$(this).attr("href"); /* Creates a new variable that targets the imageLocation attribute href */
+  $image.attr("src", imageLocation); /* Updates overlay with image linked */
+  $overlay.show(); /* Displays the overlay */
+  var captionText=$(this).children("img").attr("alt"); /* gets the alt attribute child and changes to caption */
+  $caption.text(captionText);
+});
+$overlay.click(function() {
+  $overlay.hide();
+});
