@@ -1,11 +1,13 @@
 /* Style Header */
-
-header {
-  border-style: solid;
-  width: 928px;
-  height: 50px;
-  margin-bottom: 50px;
+#header {
+  width: 500px;
+  height: 15%;
 }
+
+#headerImage {
+  width: 100%;
+}
+
 /* End of Header styling portion */
 
 /*Styles Navigation Element */
@@ -77,44 +79,86 @@ li a:link {
 /* End of Navigation element styling section */
 
 /* Basic body styling section */
-
   #body {
       background: linear-gradient(to bottom right, #e6e6ff, #9999ff);
   }
 
+/* Footer Styling Section */
   #footer {
 
   }
-/*
- Styles Lightbox overlay on all screen sizes
-  #imageGallery {
-    border-style: none;
-    list-style-type: none;
-    width: 400px;
-    height: 300px;
-    margin-left: 70px;
-  }
-
-  .lightBox a {
-    display: inline-block;
-    list-style-type: none;
-    list-style-position: inside;
-    overflow: visible;
-    padding: 20px;
-    position: relative;
-  }
-
-  .lightbox_trigger {
-    display: inline-flex;
-    list-style-type: none;
-    width: 300px;
-    height: 200px;
-  }
- End lightbox styling section */
-
 
 /* Styles the page for screen sizes less than 480px */
 @media (max-width: 480px) {
+
+  #wrapper {
+    border-style: inset;
+    border-width: 5px;
+    margin-left: 5px;
+    width: 425px;
+    height: auto;
+  }
+
+  #myForm {
+    border-style: solid;
+    border-width: 5px;
+    margin: 5px;
+    padding: 5px;
+    width: 400px;
+  }
+
+.form {
+  border-style: solid; !important
+  margin: 5px;
+  padding: 5px;
+  width: 400px;
+  overflow: visible;
+}
+
+.secondForm {
+  border-style: solid; !important
+  margin: 5px;
+  padding: 5px;
+  width: 400px;
+}
+
+#spoiler {
+    border-style: solid;
+    width: 400px;
+}
+
+#lightBox {
+  list-style-type: none;
+  border-style: solid;
+  border-width: 5px;
+  width: 400px;
+  height: 200px;
+  display: inline-block;
+}
+
+#lightBox ul {
+  list-style-type: none;
+  border-style: solid;
+  display: inline-flex;
+}
+
+#imageGallery {
+  border-style: solid;
+  border-width: 5px;
+  margin-left: -45px;
+  margin-top: -20px;
+  height: 90px;
+  width: 400px;
+}
+
+
+
+#passBox {
+  border-style: solid;
+  border-width: 5px;
+  width: 400px;
+
+}
 
 }
 

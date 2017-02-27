@@ -19,9 +19,9 @@
 	<body id="body">
 		<header>
 			<div id="header">
-				<a href="index.html"><img src="img/header1980px.jpg">Michael Deaton's Front End Web Design Portfolio Project</a> <!-- Creates a title for the page -->
+				<a href="index.html" id="headerImage"><img src="img/header1980px.jpg"></a> <!-- Creates a title for the page -->
 			</div>
-	</header>
+		</header>
 
 		<!-- The following code creates a series of navigable site links for the whole site. -->
 			<nav>
@@ -36,12 +36,14 @@
 				</ul>
 			</nav>
 
-		<div id="wrapper">
+	<div id="wrapper">
 		<!-- Sample Forms Section -->
-		<div class="myForm">
-			<h1>Sample Form 1</h1>
+
+
+			<div class="myForm">
+				<h1>Sample Form 1</h1>
         <form class="form" action="action_page.php" method="post">
-          First Name <div id="myForm"><br>
+          <div id="myForm">First Name<br>
           <input type="text" name="firstname"><br><br>
           Last Name <br>
           <input type="text" name="lastname"><br><br>
@@ -49,36 +51,38 @@
         </form>
 		</div>
 
-		<h1>Sample Form 2</h1>
-		<div class="myForm">
-		  <form class="form" action="action_page.php" method="get">
-				How much wood would a woodchuck chuck if a woodchuck could chuck wood?<br>
-				All the wood he could! <input type="radio" name="answer1"><br>
-				The woodchuck could chuck zero woods. <input type="radio" name="answer2"><br>
-				What a strange question! <input type="radio" name="answer3"><br>
-				<input type="submit" value="Submit"><br>
-			</form>
-		</div>
+		<div class="secondForm">
+			<h1>Sample Form 2</h1>
+			  <form class="form" action="action_page.php" method="get">
+					How much wood would a woodchuck chuck if a woodchuck could chuck wood?<br>
+					All the wood he could! <input type="radio" name="answer1"><br>
+					The woodchuck could chuck zero woods. <input type="radio" name="answer2"><br>
+					What a strange question! <input type="radio" name="answer3"><br>
+					<input type="submit" value="Submit"><br>
+				</form>
+		 </div>
 
 <!-- Practice Spoiler section -->
 		<div id="spoiler">
 			<h1>Sample Jquery Spoiler</h1>
 			<p class="spoiler">THIS IS SAMPLE SPOILER TEXT</p>
-
 			<button id="hide">Hide</button>
 			<button id="show">Show</show>
 		</div>
 
 <!-- Practice light box section -->
+	<div id="lightBox">
 		<h1>Light box example</h1>
 			<ul id="imageGallery">
-				<li class="lightBox"><a href="img/evolution1.jpg" class="lightbox_trigger" width="500" height="350"><img src="img/evolution1.jpg" width="250" height="150" alt="Sample Image"></a></li>
-				<li class="lightBox"><a href="img/fire_1.jpg" class="lightbox_trigger" width="500" height="350"><img src="img/fire_1.jpg" width="250" height="150" alt="Sample Image"></a></li>
-				<li class="lightBox"><a href="img/skulls.jpg" class="lightbox_trigger" width="500" height="350"><img src="img/skulls.jpg" width="250" height="150" alt="Sample Image"></a></li>
+				<li class="lightBox"><a href="img/evolution1.jpg" class="lightbox_trigger" width="500" height="350"><img src="img/evolution1.jpg" width="120" height="50" alt="Sample Image"></a></li>
+				<li class="lightBox"><a href="img/fire_1.jpg" class="lightbox_trigger" width="500" height="350"><img src="img/fire_1.jpg" width="120" height="50" alt="Sample Image"></a></li>
+				<li class="lightBox"><a href="img/skulls.jpg" class="lightbox_trigger" width="500" height="350"><img src="img/skulls.jpg" width="120" height="50" alt="Sample Image"></a></li>
+				<li class="lightBox"><a href="img/screenpick.jpg" class="lightbox_trigger" width="500" height="350"><img src="img/screenpick.jpg" width="120" height="50" alt="Sample Image"></a></li>
 			</ul>
-
+	</div>
 
 <!-- Practice Password entry and confirmation box section -->
+		<div id="passBox">
 			<form id="passbox" action="#" method="post">
 				<h1>Sample Password Entry Box</h1>
 				<p>
@@ -100,8 +104,8 @@
 				</p>
 			</form>
 		</div>
-
-		</body>
+	</div>
+</body>
 
 		<footer>
 			<div class="footerLogo">
