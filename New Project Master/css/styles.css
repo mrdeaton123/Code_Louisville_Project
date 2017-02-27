@@ -99,65 +99,86 @@ li a:link {
     height: auto;
   }
 
-  #myForm {
-    border-style: solid;
-    border-width: 5px;
-    margin: 5px;
-    padding: 5px;
-    width: 400px;
-  }
-
 .form {
   border-style: solid; !important
-  margin: 5px;
+  margin: 10px 5px 0px 5px;
   padding: 5px;
-  width: 400px;
+  width: 370px;
   overflow: visible;
+}
+
+#myForm {
+  border-style: solid;
+  border-width: 3px;
+  margin: 10px 5px 5px 0px;
+  padding: 5px;
+  width: 345px;
 }
 
 .secondForm {
   border-style: solid; !important
   margin: 5px;
   padding: 5px;
-  width: 400px;
+  width: 370px;
+  margin: 5px;
 }
+
+.form2 {
+  border-style: solid; !important
+  border-width: 5px;
+  margin: 0px;
+  padding: 3px;
+  width: 355px;
+}
+
 
 #spoiler {
     border-style: solid;
-    width: 400px;
+    width: 370px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.spoiler {
+  border-style: solid;
+  width: 300px;
 }
 
 #lightBox {
   list-style-type: none;
   border-style: solid;
-  border-width: 5px;
-  width: 400px;
-  height: 200px;
-  display: inline-block;
+  border-width: 3px;
+  width: 380px;
+  margin: 10px;
+  margin-left: 5px;
+
 }
 
 #lightBox ul {
   list-style-type: none;
   border-style: solid;
   display: inline-flex;
+  vertical-align: middle;
+
 }
 
 #imageGallery {
   border-style: solid;
   border-width: 5px;
-  margin-left: -45px;
-  margin-top: -20px;
-  height: 90px;
-  width: 400px;
+  width: 350px;
 }
 
-
+.imageBox {
+  float: left;
+  vertical-align: middle;
+}
 
 #passBox {
   border-style: solid;
-  border-width: 5px;
-  width: 400px;
-
+  border-width: 3px;
+  width: 380px;
+  margin: 10px 5px 10px 5px;
+  padding: 3px;
 }
 
 }
