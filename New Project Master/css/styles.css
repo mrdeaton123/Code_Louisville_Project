@@ -194,7 +194,7 @@ li a:link {
     border-style: inset;
     border-width: 5px;
     margin-left: 5px;
-    width: 700px;
+    width: 740px;
     height: auto;
     display: inline-flex;
   }
@@ -297,8 +297,8 @@ li a:link {
   }
 
   #footer {
-    position: absolute;
-    bottom: 120px;
+    position: static;
+    bottom: 0;
     left: 0;
   }
 }
@@ -414,9 +414,9 @@ li a:link {
     position: absolute;
   }
 
-  #footer {
+  #footer  {
     position: absolute;
-    bottom: 370px;
+    bottom: 0;
     left: 0;
   }
 }
