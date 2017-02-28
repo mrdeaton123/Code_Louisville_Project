@@ -15,6 +15,8 @@
 nav {
   border-style: none;
   position: fixed;
+  top: 50px;
+  left: 0px;
   float: left;
   margin: 0px;
   padding: 0px;
@@ -80,12 +82,9 @@ li a:link {
 
 /* Basic body styling section */
   #body {
-      background: linear-gradient(to bottom right, #e6e6ff, #9999ff);
-  }
-
-/* Footer Styling Section */
-  #footer {
-
+      background: linear-gradient(to top left, #e6e6ff, #9999ff);
+      height: 100%;
+      background-repeat: repeat;
   }
 
 /* Styles the page for screen sizes less than 480px */
@@ -99,87 +98,93 @@ li a:link {
     height: auto;
   }
 
-.form {
-  border-style: solid; !important
-  margin: 10px 5px 10px 10px;
-  padding: 5px;
-  width: 370px;
-  overflow: visible;
-}
+  .form {
+    border-style: solid; !important
+    margin: 10px 5px 10px 10px;
+    padding: 5px;
+    width: 370px;
+    overflow: visible;
+  }
 
-#myForm {
-  border-style: solid;
-  border-width: 3px;
-  margin: 10px 5px 5px 5px;
-  padding: 5px;
-  width: 345px;
-}
-
-.secondForm {
-  border-style: solid; !important
-  margin: 5px;
-  padding: 5px;
-  width: 367px;
-  margin: 5px;
-}
-
-.form2 {
-  border-style: solid; !important
-  border-width: 5px;
-  margin: 0px;
-  padding: 3px;
-  width: 350px;
-}
-
-
-#spoiler {
+  #myForm {
     border-style: solid;
-    width: 367px;
+    border-width: 3px;
+    margin: 10px 5px 5px 5px;
+    padding: 5px;
+    width: 345px;
+  }
+
+  .secondForm {
+    border-style: solid; !important
     margin: 5px;
     padding: 5px;
-}
+    width: 367px;
+    margin: 5px;
+  }
 
-.spoiler {
-  border-style: solid;
-  width: 270px;
-}
+  .form2 {
+    border-style: solid; !important
+    border-width: 5px;
+    margin: 0px;
+    padding: 3px;
+    width: 350px;
+  }
 
-#lightBox {
-  list-style-type: none;
-  border-style: solid;
-  border-width: 3px;
-  width: 383px;
-  /* margin: 10px;
-  margin-left: 5px; */
-}
 
-#lightBox ul {
-  list-style-type: none;
-  border-style: solid;
-  display: block;
-  height: 75px;
-}
+  #spoiler {
+      border-style: solid;
+      width: 367px;
+      margin: 5px;
+      padding: 5px;
+  }
 
-#imageGallery {
-  border-style: solid;
-  border-width: 5px;
-  margin-left: 5px;
-  width: 320px;
-}
+  .spoiler {
+    border-style: solid;
+    width: 270px;
+  }
 
-.imageBox {
-  float: left;
-  margin-left: -35px;
-  padding: 2px;
-}
+  #lightBox {
+    list-style-type: none;
+    border-style: solid;
+    border-width: 3px;
+    width: 383px;
+    /* margin: 10px;
+    margin-left: 5px; */
+  }
 
-#passBox {
-  border-style: solid;
-  border-width: 3px;
-  width: 373px;
-  margin: 10px 5px 10px 5px;
-  padding: 3px;
-}
+  #lightBox ul {
+    list-style-type: none;
+    border-style: solid;
+    display: block;
+    height: 75px;
+  }
+
+  #imageGallery {
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 5px;
+    width: 320px;
+  }
+
+  .imageBox {
+    float: left;
+    margin-left: -35px;
+    padding: 2px;
+  }
+
+  #passBox {
+    border-style: solid;
+    border-width: 3px;
+    width: 373px;
+    margin: 10px 5px 10px 5px;
+    padding: 3px;
+  }
+
+  #footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 /* Styles page for screen sizes between 480 and 768 px */
@@ -290,6 +295,12 @@ li a:link {
     display: inline-block;
     position: absolute;
   }
+
+  #footer {
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+  }
 }
 
 /* Styles page for screen sizes above 769px */
@@ -299,16 +310,21 @@ li a:link {
     border-style: inset;
     border-width: 5px;
     margin-left: 5px;
-    max-width: 1200px;
+    width: 1050px;
     height: auto;
+    display: inline-flex;
   }
 
   .form {
     border-style: solid; !important
-    margin: 10px 5px 10px 10px;
+    margin: 0px 5px 10px 10px;
     padding: 5px;
-    width: 370px;
+    width: 330px;
+    height: 269px;
     overflow: visible;
+    display: inline-block;
+    float: left;
+
   }
 
   #myForm {
@@ -316,6 +332,91 @@ li a:link {
     border-width: 3px;
     margin: 10px 5px 5px 5px;
     padding: 5px;
-    width: 345px;
+    width: 220px;
+  }
+
+  .secondForm {
+    border-style: solid; !important
+    margin: 5px;
+    padding: 5px;
+    width: 325px;
+    margin: 5px;
+    display: inline-block;
+    float: left;
+  }
+
+  .form2 {
+    border-style: solid; !important
+    border-width: 5px;
+    margin: 0px;
+    padding: 3px;
+    width: 310px;
+  }
+
+
+  #spoiler {
+      border-style: solid;
+      width: 325px;
+      height: 266px;
+      margin: 5px;
+      padding: 5px;
+      float: right;
+  }
+
+  .spoiler {
+    border-style: solid;
+    width: 270px;
+  }
+
+  #lightBox {
+    list-style-type: none;
+    border-style: solid;
+    border-width: 3px;
+    width: 340px;
+    height: 240px;
+    /* margin: 10px;
+    margin-left: 5px; */
+    float: left;
+  }
+
+  #lightBox ul {
+    list-style-type: none;
+    border-style: solid;
+    display: block;
+    height: 75px;
+  }
+
+  #imageGallery {
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 5px;
+    width: 280px;
+  }
+
+  .imageBox {
+    float: left;
+    margin-left: -35px;
+    padding: 2px;
+  }
+
+  #passBox {
+    border-style: solid;
+    border-width: 3px;
+    width: 330px;
+    height: 370px;
+    margin: 0px 5px 10px 5px;
+    padding: 3px;
+    float: right;
+  }
+
+  #footer {
+    display: inline-block;
+    position: absolute;
+  }
+
+  #footer {
+    position: absolute;
+    bottom: 370px;
+    left: 0;
   }
 }
