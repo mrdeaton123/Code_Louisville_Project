@@ -1,7 +1,8 @@
 /* Style Header */
 #header {
   width: 500px;
-  height: 15%;
+  height: 150px;
+  margin-bottom: 20px;
 }
 
 #headerImage {
@@ -15,6 +16,8 @@
 nav {
   border-style: none;
   position: fixed;
+  top: 50px;
+  left: 0px;
   float: left;
   margin: 0px;
   padding: 0px;
@@ -80,12 +83,9 @@ li a:link {
 
 /* Basic body styling section */
   #body {
-      background: linear-gradient(to bottom right, #e6e6ff, #9999ff);
-  }
-
-/* Footer Styling Section */
-  #footer {
-
+      background: linear-gradient(to top left, #e6e6ff, #9999ff);
+      height: 100%;
+      background-repeat: repeat;
   }
 
 /* Styles the page for screen sizes less than 480px */
@@ -99,109 +99,131 @@ li a:link {
     height: auto;
   }
 
-.form {
-  border-style: solid; !important
-  margin: 10px 5px 10px 10px;
-  padding: 5px;
-  width: 370px;
-  overflow: visible;
-}
+  .form {
+    border-style: solid; !important
+    margin: 10px 5px 10px 10px;
+    padding: 5px;
+    width: 370px;
+    overflow: visible;
+  }
 
-#myForm {
-  border-style: solid;
-  border-width: 3px;
-  margin: 10px 5px 5px 5px;
-  padding: 5px;
-  width: 345px;
-}
-
-.secondForm {
-  border-style: solid; !important
-  margin: 5px;
-  padding: 5px;
-  width: 367px;
-  margin: 5px;
-}
-
-.form2 {
-  border-style: solid; !important
-  border-width: 5px;
-  margin: 0px;
-  padding: 3px;
-  width: 350px;
-}
-
-
-#spoiler {
+  #myForm {
     border-style: solid;
-    width: 367px;
+    border-width: 3px;
+    margin: 10px 5px 5px 5px;
+    padding: 5px;
+    width: 345px;
+  }
+
+  .secondForm {
+    border-style: solid; !important
     margin: 5px;
     padding: 5px;
-}
+    width: 367px;
+    margin: 5px;
+  }
 
-.spoiler {
-  border-style: solid;
-  width: 270px;
-}
+  .form2 {
+    border-style: solid; !important
+    border-width: 5px;
+    margin: 0px;
+    padding: 3px;
+    width: 350px;
+  }
 
-#lightBox {
-  list-style-type: none;
-  border-style: solid;
-  border-width: 3px;
-  width: 383px;
-  /* margin: 10px;
-  margin-left: 5px; */
-}
 
-#lightBox ul {
-  list-style-type: none;
-  border-style: solid;
-  display: block;
-  height: 75px;
-}
+  #spoiler {
+      border-style: solid;
+      width: 367px;
+      margin: 5px;
+      padding: 5px;
+  }
 
-#imageGallery {
-  border-style: solid;
-  border-width: 5px;
-  margin-left: 5px;
-  width: 320px;
-}
+  .spoiler {
+    border-style: solid;
+    width: 270px;
+  }
 
-.imageBox {
-  float: left;
-  margin-left: -35px;
-  padding: 2px;
-}
+  #lightBox {
+    list-style-type: none;
+    border-style: solid;
+    border-width: 3px;
+    width: 383px;
+    /* margin: 10px;
+    margin-left: 5px; */
+  }
 
-#passBox {
-  border-style: solid;
-  border-width: 3px;
-  width: 373px;
-  margin: 10px 5px 10px 5px;
-  padding: 3px;
-}
+  #lightBox ul {
+    list-style-type: none;
+    border-style: solid;
+    display: block;
+    height: 75px;
+  }
+
+  #imageGallery {
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 5px;
+    width: 320px;
+  }
+
+  .imageBox {
+    float: left;
+    margin-left: -35px;
+    padding: 2px;
+  }
+
+  #passBox {
+    border-style: solid;
+    border-width: 3px;
+    width: 373px;
+    margin: 10px 5px 10px 5px;
+    padding: 3px;
+  }
+
+  #footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 10px;
+  }
 }
 
 /* Styles page for screen sizes between 480 and 768 px */
 @media (min-width: 481px) and (max-width: 768px) {
 
-  #wrapper {
-    border-style: inset;
+  #wrapper1 {
+    border-style: solid;
     border-width: 5px;
     margin-left: 5px;
+    margin-top: 20px;
     width: 700px;
-    height: auto;
-    display: inline-flex;
+    height: 450px;
+    display: inline-block;
+    position: relative;
+  }
+
+  #wrapper2 {
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 700px;
+    height: 400px;
+    display: inline-block;
+    position: relative;
   }
 
   .form {
     border-style: solid; !important
     margin: 0px 5px 10px 10px;
     padding: 5px;
-    width: 330px;
+    width: 325px;
     overflow: visible;
-    display: inline-block;
-    float: left;
+    display: inline-flex;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 
   }
 
@@ -221,6 +243,9 @@ li a:link {
     margin: 5px;
     display: inline-block;
     float: right;
+    position: absolute;
+    top: 0px;
+    left: 350px;
   }
 
   .form2 {
@@ -238,6 +263,9 @@ li a:link {
       margin: 5px;
       padding: 5px;
       float: right;
+      position: absolute;
+      left: 0px;
+      top: 200px;
   }
 
   .spoiler {
@@ -249,11 +277,14 @@ li a:link {
     list-style-type: none;
     border-style: solid;
     border-width: 3px;
-    width: 340px;
-    height: 240px;
-    /* margin: 10px;
-    margin-left: 5px; */
-    float: left;
+    width: 330px;
+    height: 375px;
+    margin: 10px;
+    margin-left: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
   }
 
   #lightBox ul {
@@ -261,12 +292,13 @@ li a:link {
     border-style: solid;
     display: block;
     height: 75px;
+
   }
 
   #imageGallery {
     border-style: solid;
     border-width: 5px;
-    margin-left: 5px;
+    margin-left: 0px;
     width: 280px;
   }
 
@@ -284,31 +316,55 @@ li a:link {
     margin: 0px 5px 10px 5px;
     padding: 3px;
     float: left;
+    position: absolute;
+    top: 10px;
+    left: 350px;
   }
 
   #footer {
     display: inline-block;
     position: absolute;
   }
+
+  #footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 /* Styles page for screen sizes above 769px */
 @media (min-width: 769px) {
 
-  #wrapper {
-    border-style: inset;
+  #wrapper1 {
+    border-style: solid;
     border-width: 5px;
     margin-left: 5px;
-    max-width: 1200px;
+    width: 1050px;
+    height: 295px;
+    display: inline-block;
+  }
+
+  #wrapper2 {
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 150px;
+    margin-top: 25px;
+    width: 750px;
     height: auto;
+    display: inline-block;
   }
 
   .form {
     border-style: solid; !important
-    margin: 10px 5px 10px 10px;
+    margin: 10px 5px 15px 10px;
     padding: 5px;
-    width: 370px;
+    width: 330px;
+    height: 275px;
     overflow: visible;
+    display: inherit;
+    float: left;
+
   }
 
   #myForm {
@@ -316,6 +372,98 @@ li a:link {
     border-width: 3px;
     margin: 10px 5px 5px 5px;
     padding: 5px;
-    width: 345px;
+    width: 220px;
+  }
+
+  .secondForm {
+    border-style: solid; !important
+    margin: 5px;
+    padding: 5px;
+    width: 325px;
+    height: 270px;
+    margin: 5px;
+    display: inherit;
+    position: absolute;
+
+  }
+
+  .form2 {
+    border-style: solid; !important
+    border-width: 5px;
+    margin: 0px;
+    padding: 3px;
+    width: 310px;
+    display: inherit;
+  }
+
+  #spoiler {
+      border-style: solid;
+      width: 325px;
+      height: 266px;
+      margin: 5px;
+      padding: 5px;
+      float: right;
+  }
+
+  .spoiler {
+    border-style: solid;
+    width: 270px;
+  }
+
+  #lightBox {
+    list-style-type: none;
+    border-style: solid;
+    border-width: 3px;
+    width: 340px;
+    height: 360px;
+    margin: 10px;
+    margin-left: 5px;
+    float: left;
+  }
+
+  #lightBox ul {
+    list-style-type: none;
+    border-style: solid;
+    display: block;
+    height: 250px;
+    float: left;
+    display: inherit;
+  }
+
+  #imageGallery {
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 5px;
+    width: 280px;
+    float: left;
+    display: inherit;
+  }
+
+  .imageBox {
+    float: left;
+    margin-left: -35px;
+    padding: 2px;
+  }
+
+  #passBox {
+    border-style: solid;
+    border-width: 3px;
+    width: 330px;
+    height: 370px;
+    margin: 10px 5px 10px 5px;
+    padding: 3px;
+    display: inherit;
+    float: right;
+  }
+
+  #footer {
+    display: inline-block;
+    position: absolute;
+  }
+
+  #footer  {
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }
