@@ -2,6 +2,7 @@
 #header {
   width: 500px;
   height: 150px;
+  margin-bottom: 20px;
 }
 
 #headerImage {
@@ -184,29 +185,45 @@ li a:link {
     position: relative;
     bottom: 0;
     left: 0;
+    margin-top: 10px;
   }
 }
 
 /* Styles page for screen sizes between 480 and 768 px */
 @media (min-width: 481px) and (max-width: 768px) {
 
-  #wrapper {
-    border-style: inset;
+  #wrapper1 {
+    border-style: solid;
     border-width: 5px;
     margin-left: 5px;
-    width: 740px;
-    height: auto;
-    display: inline-flex;
+    margin-top: 20px;
+    width: 700px;
+    height: 450px;
+    display: inline-block;
+    position: relative;
+  }
+
+  #wrapper2 {
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 700px;
+    height: 400px;
+    display: inline-block;
+    position: relative;
   }
 
   .form {
     border-style: solid; !important
     margin: 0px 5px 10px 10px;
     padding: 5px;
-    width: 330px;
+    width: 325px;
     overflow: visible;
-    display: inline-block;
-    float: left;
+    display: inline-flex;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 
   }
 
@@ -226,6 +243,9 @@ li a:link {
     margin: 5px;
     display: inline-block;
     float: right;
+    position: absolute;
+    top: 0px;
+    left: 350px;
   }
 
   .form2 {
@@ -243,6 +263,9 @@ li a:link {
       margin: 5px;
       padding: 5px;
       float: right;
+      position: absolute;
+      left: 0px;
+      top: 200px;
   }
 
   .spoiler {
@@ -254,11 +277,14 @@ li a:link {
     list-style-type: none;
     border-style: solid;
     border-width: 3px;
-    width: 340px;
-    height: 240px;
-    /* margin: 10px;
-    margin-left: 5px; */
-    float: left;
+    width: 330px;
+    height: 375px;
+    margin: 10px;
+    margin-left: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
   }
 
   #lightBox ul {
@@ -266,12 +292,13 @@ li a:link {
     border-style: solid;
     display: block;
     height: 75px;
+
   }
 
   #imageGallery {
     border-style: solid;
     border-width: 5px;
-    margin-left: 5px;
+    margin-left: 0px;
     width: 280px;
   }
 
@@ -289,6 +316,9 @@ li a:link {
     margin: 0px 5px 10px 5px;
     padding: 3px;
     float: left;
+    position: absolute;
+    top: 10px;
+    left: 350px;
   }
 
   #footer {
@@ -306,24 +336,34 @@ li a:link {
 /* Styles page for screen sizes above 769px */
 @media (min-width: 769px) {
 
-  #wrapper {
-    border-style: inset;
+  #wrapper1 {
+    border-style: solid;
     border-width: 5px;
     margin-left: 5px;
     width: 1050px;
-    height: 650px;
+    height: 295px;
+    display: inline-block;
+  }
+
+  #wrapper2 {
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 150px;
+    margin-top: 25px;
+    width: 750px;
+    height: auto;
     display: inline-block;
   }
 
   .form {
     border-style: solid; !important
-    margin: 0px 5px 10px 10px;
+    margin: 10px 5px 15px 10px;
     padding: 5px;
     width: 330px;
     height: 275px;
     overflow: visible;
     display: inherit;
-    float: left
+    float: left;
 
   }
 
@@ -343,6 +383,7 @@ li a:link {
     height: 270px;
     margin: 5px;
     display: inherit;
+    position: absolute;
 
   }
 
@@ -354,7 +395,6 @@ li a:link {
     width: 310px;
     display: inherit;
   }
-
 
   #spoiler {
       border-style: solid;
@@ -375,7 +415,7 @@ li a:link {
     border-style: solid;
     border-width: 3px;
     width: 340px;
-    height: 240px;
+    height: 360px;
     margin: 10px;
     margin-left: 5px;
     float: left;
@@ -385,7 +425,7 @@ li a:link {
     list-style-type: none;
     border-style: solid;
     display: block;
-    height: 75px;
+    height: 250px;
     float: left;
     display: inherit;
   }
@@ -410,7 +450,7 @@ li a:link {
     border-width: 3px;
     width: 330px;
     height: 370px;
-    margin: 0px 5px 10px 5px;
+    margin: 10px 5px 10px 5px;
     padding: 3px;
     display: inherit;
     float: right;

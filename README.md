@@ -1,5 +1,5 @@
 # Code_Louisville_Project
 
-To run this program, simply open the index.html file in IE11, Firefox or Edge. Chrome functionality is hopefully coming in time.
+To run this program, simply open the index.html file in any web browser.
 
 The purpose of this project is to create a portfolio demonstrating a fundamental understanding of the basics of HTML, CSS, Javascript and Jquery skills. 
