@@ -28,7 +28,7 @@ var $image=$("<img>"); /* Creates a new variable titled image and fills it with 
 var $caption=$("<p></p>"); /* Creates a new variable titled caption and fills it with a new paragraph */
 $overlay.append($image); /* Creates an image to append to the overlay */
 $overlay.append($caption); /*Appends the overlay with a caption */
-$("body").append($overlay); /* Adds the overlay proper */
+$("lightBox").append($overlay); /* Adds the overlay proper */
 $("#imageGallery a").click(function(event) { /*targets the id imageGallery links on click and performs following function */
   event.preventDefault(); /* Prevents the default action */
   var imageLocation=$(this).attr("href"); /* Creates a new variable that targets the imageLocation attribute href */
