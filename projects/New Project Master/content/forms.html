@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Do not place any head content above these three meta tags -->
+		<meta charset="utf-8"> <!-- Unicode charset encoding in UTF-8 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Edge mode tells IE to display content in highest available mode -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive meta-tag allows browser to render width of page at width of own screen -->
+		<!-- Do not place any head content above these three meta tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- <link rel="icon" href="../../favicon.ico"> --> <!-- Commented out because I don't have a favicon for this site ready -->
+
+		<title></title>
+		<link href="../css/normalize.css" rel="stylesheet">
+		<link href="../css/styles.css" rel="stylesheet">  <!-- Core style sheet -->
+		<script src="../js/jquery-3.1.1.min.js"></script> <!-- Jquery library -->
+	</head>
+
+	<body id="body">
+		<header>
+			<div id="header">
+				<a href="../index.html">Michael Deaton's Front End Web Design Portfolio Project</a> <!-- Creates a title for the page -->
+			</div>
+	</header>
+
+		<!-- The following code creates a series of navigable site links for the whole site. -->
+			<nav>
+				<ul id="navigation">
+						<li class="home"><a href="../index.html">Home</a></li>
+						<li class="forms"><a href="../content/forms.html">Forms Practice</a></li>
+						<li class="spoilers"><a href="../content/spoilers.html">Spoiler Practice</a></li>
+						<li class="boxes"><a href="../content/light.html">Light Boxes</a></li>
+						<li class="password"><a href="../content/password.html">Password</a></li>
+						<li class="about"><a href="../content/about.html">About</a></li>
+						<li class="contact"><a href="../content/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div id="myForm">
+        <form class="form" action="action_page.php" method="post">
+          First Name <br>
+          <input type="text" name="firstname"><br><br>
+          Last Name <br>
+          <input type="text" name="lastname"><br><br>
+					<input type="submit" value="Submit"><br>
+        </form>
+		</div>
+
+		<div id="myForm">
+		  <form class="form" action="action_page.php" method="get">
+				How much wood would a woodchuck chuck if a woodchuck could chuck wood?<br>
+				All the wood he could! <input type="radio" name="answer1"><br>
+				The woodchuck could chuck zero woods. <input type="radio" name="answer2"><br>
+				What a strange question! <input type="radio" name="answer3"><br>
+				<input type="submit" value="Submit"><br>
+			</form>
+		</div>
+
+		</body>
+
+		<footer>
+			<div class="footerLogo">
+				 <img></img>
+			</div>
+			<div id="footer">
+				<a href="mailto:mrde226@uky.edu"><img src="../img/email.jpg" alt="Mail Logo" class="social-icon"></a> <!-- email contact link -->
+				<a href="https://twitter.com/mrboneguy"><img src="../img/twitter-icon.png" alt="Twitter Logo" class="social-icon"></a>  <!--- twitter profile link -->
+				<a href="https://www.linkedin.com/hp/?dnr=f2gitYi39X1bee1CbWritfQ22vpmS7B0Wy_X&trk=nav_responsive_tab_home"><img src="../img/linkedin.png" alt="Linkedin Logo" class="social-icon"></a> <!-- linkedin profile -->
+			</div>
+		</footer>
+
+
+
+	<script type="text/javascript" src="../js/scripts.js" defer></script> <!-- loads JS file after DOM has loaded -->
+
+</html>
