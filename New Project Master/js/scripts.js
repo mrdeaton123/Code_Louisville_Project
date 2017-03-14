@@ -1,62 +1,47 @@
 /* Following code creates an animated pop out navigation menu on the side of the page */
 
-$(function() {
-  $('#navigation a').stop().animate({'marginLeft':'-90px'},1000); /* selects all links in the navigation element and moves them left -90px */
-  $('#navigation > li').hover(                                    /* selects nativation list items and on hover causes them to move to the right */
-  function () {
-   $('a',$(this)).stop().animate({'marginLeft':'-2px'},200);      /* Pops out the navigation items after a second when page is first loaded */
-  },
-  function () {
-   $('a',$(this)).stop().animate({'marginLeft':'-90px'},200);    /* after hover over with mouse resets links to original position -90px off screen */
-  }
- );
-});
+  $(function() {
+    $('#navigation a').stop().animate({'marginLeft':'-90px'},1000); /* selects all links in the navigation element and moves them left -90px */
+    $('#navigation > li').hover(                                    /* selects nativation list items and on hover causes them to move to the right */
+    function () {
+     $('a',$(this)).stop().animate({'marginLeft':'-2px'},200);      /* Pops out the navigation items after a second when page is first loaded */
+    },
+    function () {
+     $('a',$(this)).stop().animate({'marginLeft':'-90px'},200);    /* after hover over with mouse resets links to original position -90px off screen */
+    }
+   );
+  });
 
 /* Following code creates hide and show functionality for spoilers in the material */
-$(document).ready(function(){
-  $("#hide").click(function(){  /* on click spoiler is hidden */
-    $(".spoiler").hide();
+  $(document).ready(function(){
+    $("#hide").click(function(){  /* on click spoiler is hidden */
+      $(".spoiler").hide();
+    });
+    $("#show").click(function(){ /* on click spoiler is shown */
+      $(".spoiler").show();
+    });
   });
-  $("#show").click(function(){ /* on click spoiler is shown */
-    $(".spoiler").show();
-  });
-});
 
-jQuery(document).ready(function($) {
-	$('.lightbox_trigger').click(function(e) {
-		//prevent default action (hyperlink)
-		e.preventDefault();
-		//Get clicked link href
-		var image_href = $(this).attr("href");
-		/*
-		If the lightbox window HTML already exists in document,
-		change the img src to to match the href of whatever link was clicked
 
-		If the lightbox window HTML doesn't exists, create it and insert it.
-		(This will only happen the first time around)
-		*/
-		if ($('#lightbox').length > 0) { // #lightbox exists
-			//place href as img src value
-			$('#content').html('<img src="' + image_href + '" />');
-			//show lightbox window - you could use .show('fast') for a transition
-			$('#lightbox').show();
+	$('.lightbox_trigger').click(function(e) {  /* on click of elements labeled lightbox_trigger perform the following function */
+		e.preventDefault(); /* prevent default action */
+		var image_href = $(this).attr("href"); /* get image from reference */
+		if ($('#lightbox').length > 0) { /* checks to see if lightbox window exists already. If not, creates one. */
+			$('#content').html('<img src="' + image_href + '" />'); /* stick href image into source img location */
+			$('#lightbox').show('fast'); /* how lightbox window with transition */
 		}
-		else { //#lightbox does not exist - create and insert (runs 1st time only)
-			//create HTML markup for lightbox window
-			var lightbox =
+		else {
+			var lightbox = /* Creates new div for lightbox */
 			'<div id="lightbox">' +
 				'<p>Click to close</p>' +
-				'<div id="content">' + //insert clicked link's href into img src
+				'<div id="content">' + /* inserts clicked link's href into img src */
 					'<img src="' + image_href +'" />' +
 				'</div>' +
 			'</div>';
-			//insert lightbox HTML into page
-			$('body').append(lightbox);
+			$('body').append(lightbox); /* Adds lightbox div to target location (body) */
 		}
 	});
 
-	//Click anywhere on the page to get rid of lightbox window
-	$('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+	$('body').on('click', '#lightbox', function() { /* Closes lightbox when clicking anywhere on screen */
 		$('#lightbox').hide();
 	});
-});
