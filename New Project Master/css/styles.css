@@ -79,6 +79,14 @@ li a:link {
   position: relative;
   overflow: hidden;
 }
+
+#contact {
+  max-width: 300px;
+  overflow: auto;
+  border-style: solid;
+  border-width: 5px;
+  position: absolute;
+}
 /* End of Navigation element styling section */
 
 /* Basic body styling section */
@@ -131,6 +139,67 @@ li a:link {
     width: 350px;
   }
 
+  #lightbox_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/overlay.png) repeat;
+    text-align: center;
+    z-index: 0;
+  }
+
+  #lightbox_overlay p {
+      text-align:right;
+      color:#fff;
+      margin-right:20px;
+      font-size:12px;
+  }
+
+  #lightbox_overlay img {
+      box-shadow:0 0 25px #111;
+      -webkit-box-shadow:0 0 25px #111;
+      -moz-box-shadow:0 0 25px #111;
+      max-width:940px;
+  }
+
+  #lightbox_example {
+    list-style-type: none;
+    border-style: solid;
+    border-width: 3px;
+    width: 380px;
+    height: 375px;
+    margin: 10px;
+    margin-left: 5px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+  }
+
+  #lightbox_example ul {
+    list-style-type: none;
+    border-style: solid;
+    display: block;
+    height: 75px;
+  }
+
+  #imageGallery {
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 0px;
+    width: 280px;
+  }
+
+  .imageBox {
+    float: left;
+    margin-left: -35px;
+    padding: 2px;
+    width: 100px;
+    height: 75px;
+  }
+
 
   #spoiler {
       border-style: solid;
@@ -142,51 +211,6 @@ li a:link {
   .spoiler {
     border-style: solid;
     width: 270px;
-  }
-
-  #lightBox {
-    position:fixed; /* keeps the lightbox window in the current viewport */
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:url(overlay.png) repeat;
-    text-align:center;
-  }
-  #lightBox p {
-      text-align:right;
-      color:#fff;
-      margin-right:20px;
-      font-size:12px;
-  }
-
-  #lightbox {
-    list-style-type: none;
-    border-style: solid;
-    border-width: 3px;
-    width: 383px;
-    /* margin: 10px;
-    margin-left: 5px; */
-  }
-
-  #lightbox ul {
-    list-style-type: none;
-    border-style: solid;
-    display: block;
-    height: 75px;
-  }
-
-  #imageGallery {
-    border-style: solid;
-    border-width: 5px;
-    margin-left: 5px;
-    width: 320px;
-  }
-
-  .imageBox {
-    float: left;
-    margin-left: -35px;
-    padding: 2px;
   }
 
   #passBox {
@@ -272,6 +296,67 @@ li a:link {
     width: 310px;
   }
 
+  #lightbox_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/overlay.png) repeat;
+    text-align: center;
+    z-index: 0;
+  }
+
+  #lightbox_overlay p {
+      text-align:right;
+      color:#fff;
+      margin-right:20px;
+      font-size:12px;
+  }
+
+  #lightbox_overlay img {
+      box-shadow:0 0 25px #111;
+      -webkit-box-shadow:0 0 25px #111;
+      -moz-box-shadow:0 0 25px #111;
+      max-width:940px;
+  }
+
+  #lightbox_example {
+    list-style-type: none;
+    border-style: solid;
+    border-width: 3px;
+    width: 330px;
+    height: 375px;
+    margin: 10px;
+    margin-left: 5px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+  }
+
+  #lightbox_example ul {
+    list-style-type: none;
+    border-style: solid;
+    display: block;
+    height: 75px;
+  }
+
+  #imageGallery {
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 0px;
+    width: 280px;
+  }
+
+  .imageBox {
+    float: left;
+    margin-left: -35px;
+    padding: 2px;
+    width: 100px;
+    height: 75px;
+  }
+
   #spoiler {
       border-style: solid;
       width: 325px;
@@ -288,64 +373,6 @@ li a:link {
     width: 270px;
   }
 
-  #lightBox {
-    position:fixed; /* keeps the lightbox window in the current viewport */
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:url(overlay.png) repeat;
-    text-align:center;
-}
-
-#lightBox p {
-    text-align:right;
-    color:#fff;
-    margin-right:20px;
-    font-size:12px;
-}
-
-#lightBox img {
-    box-shadow:0 0 25px #111;
-    -webkit-box-shadow:0 0 25px #111;
-    -moz-box-shadow:0 0 25px #111;
-    max-width:940px;
-}
-
-  #lightbox {
-    list-style-type: none;
-    border-style: solid;
-    border-width: 3px;
-    width: 330px;
-    height: 375px;
-    margin: 10px;
-    margin-left: 5px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
-  }
-
-  #lightbox ul {
-    list-style-type: none;
-    border-style: solid;
-    display: block;
-    height: 75px;
-
-  }
-
-  #imageGallery {
-    border-style: solid;
-    border-width: 5px;
-    margin-left: 0px;
-    width: 280px;
-  }
-
-  .imageBox {
-    float: left;
-    margin-left: -35px;
-    padding: 2px;
-  }
 
   #passBox {
     border-style: solid;
@@ -389,9 +416,9 @@ li a:link {
     border-width: 5px;
     margin-left: 150px;
     margin-top: 25px;
-    width: 750px;
-    height: auto;
-    display: inline-block;
+    width: 735px;
+    height: 400px;
+    display: inline-flex;
   }
 
   .form {
@@ -435,6 +462,67 @@ li a:link {
     display: inherit;
   }
 
+  #lightbox_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/overlay.png) repeat;
+    text-align: center;
+    z-index: 0;
+  }
+
+  #lightbox_overlay p {
+      text-align:right;
+      color:#fff;
+      margin-right:20px;
+      font-size:12px;
+  }
+
+  #lightbox_overlay img {
+      box-shadow:0 0 25px #111;
+      -webkit-box-shadow:0 0 25px #111;
+      -moz-box-shadow:0 0 25px #111;
+      max-width:940px;
+  }
+
+  #lightbox_example {
+    list-style-type: none;
+    border-style: solid;
+    border-width: 3px;
+    width: 340px;
+    height: 375px;
+    margin: 10px;
+    margin-left: 5px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+  }
+
+  #lightbox_example ul {
+    list-style-type: none;
+    border-style: solid;
+    display: block;
+    height: 75px;
+  }
+
+  #imageGallery {
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 0px;
+    width: 280px;
+  }
+
+  .imageBox {
+    float: left;
+    margin-left: -35px;
+    padding: 2px;
+    width: 100px;
+    height: 75px;
+  }
+
   #spoiler {
       border-style: solid;
       width: 325px;
@@ -449,8 +537,145 @@ li a:link {
     width: 270px;
   }
 
+
+  #passBox {
+    border-style: solid;
+    border-width: 3px;
+    width: 350px;
+    height: 370px;
+    margin: 10px 5px 10px 5px;
+    padding: 3px;
+    display: relative;
+    float: right;
+  }
+
+  #footer {
+    display: inline-block;
+    position: absolute;
+  }
+
+  #footer  {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+/* End styling sections */
+
+/* Following code sections are preserved temporarily for reference but are being rewritten and will be deleted once the rewrite is complete. */
+
+/*
+
+#lightBox {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:url(overlay.png) repeat;
+  text-align:center;
+}
+
+#lightBox p {
+  text-align:right;
+  color:#fff;
+  margin-right:20px;
+  font-size:12px;
+}
+
+#lightBox img {
+  box-shadow:0 0 25px #111;
+  -webkit-box-shadow:0 0 25px #111;
+  -moz-box-shadow:0 0 25px #111;
+  max-width:940px;
+}
+
+#lightbox {
+  list-style-type: none;
+  border-style: solid;
+  border-width: 3px;
+  width: 330px;
+  height: 375px;
+  margin: 10px;
+  margin-left: 5px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+}
+
+#lightbox ul {
+  list-style-type: none;
+  border-style: solid;
+  display: block;
+  height: 75px;
+
+}
+
+#imageGallery {
+  border-style: solid;
+  border-width: 5px;
+  margin-left: 0px;
+  width: 280px;
+}
+
+.imageBox {
+  float: left;
+  margin-left: -35px;
+  padding: 2px;
+}
+*/
+
+/* #lightBox {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:url(overlay.png) repeat;
+  text-align:center;
+}
+#lightBox p {
+    text-align:right;
+    color:#fff;
+    margin-right:20px;
+    font-size:12px;
+}
+
+#lightbox {
+  list-style-type: none;
+  border-style: solid;
+  border-width: 3px;
+  width: 383px;
+  /* margin: 10px;
+  margin-left: 5px;
+}
+
+#lightbox ul {
+  list-style-type: none;
+  border-style: solid;
+  display: block;
+  height: 75px;
+}
+
+#imageGallery {
+  border-style: solid;
+  border-width: 5px;
+  margin-left: 5px;
+  width: 320px;
+}
+
+.imageBox {
+  float: left;
+  margin-left: -35px;
+  padding: 2px;
+}
+*/
+
+/*
   #lightBox {
-      position:fixed; /* keeps the lightbox window in the current viewport */
+      position:fixed;
       top:0;
       left:0;
       width:100%;
@@ -507,33 +732,11 @@ li a:link {
     width: 100px;
     height: 50px;
     display: inline-block;
-    position: 
+    position:
   }
 
   .lightbox {
     width: 350px;
     height: 200px;
   }
-
-  #passBox {
-    border-style: solid;
-    border-width: 3px;
-    width: 330px;
-    height: 370px;
-    margin: 10px 5px 10px 5px;
-    padding: 3px;
-    display: inherit;
-    float: right;
-  }
-
-  #footer {
-    display: inline-block;
-    position: absolute;
-  }
-
-  #footer  {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-}
+ */

@@ -24,23 +24,31 @@
 			</div>
 		</header>
 
+		<!-- Creates an overlay div for the lightbox to open in -->
+	 <div id="lightbox_overlay">
+		 <p>Click to close</p>
+		 <div id="content">
+		 <img src="#" />
+	 </div>
+ 	 </div> <!-- end lightbox overlay div -->
+
 		<!-- The following code creates a series of navigable site links for the whole site. -->
 			<nav>
 				<ul id="navigation">
 						<li class="home"><a href="index.html">Home</a></li>
 						<!-- following links are blacked out because their content is incorporated fully on index.html -->
-						<!-- <li class="forms"><a href="content/forms.html">Forms Practice</a></li>
-						<li class="spoilers"><a href="content/spoilers.html">Spoiler Practice</a></li>
-						<li class="boxes"><a href="content/light.html">Light Boxes</a></li>
-						<li class="password"><a href="content/password.html">Password</a></li>
-						<li class="about"><a href="content/about.html">About</a></li> -->
+						<!-- <li class="forms"><a href="/content/forms.html">Forms Practice</a></li>
+						<li class="spoilers"><a href="/content/spoilers.html">Spoiler Practice</a></li>
+						<li class="boxes"><a href="/content/light.html">Light Boxes</a></li>
+						<li class="password"><a href="/content/password.html">Password</a></li>
+						<li class="about"><a href="/content/about.html">About</a></li> -->
 						<li class="contact"><a href="content/contact.html">Contact</a></li>
 				</ul>
 			</nav>
 
 			<div id="wrapper1">
 			<!-- Sample Forms Section -->
-				<div class="myForm">
+			<div class="myForm">
 					 <form class="form" action="action_page.php" method="post">
 					  <h2>Sample Form 1</h2><br>
 	          <div id="myForm">First Name<br>
@@ -50,7 +58,7 @@
 						<input type="submit" value="Submit"><br><br>
 						</div>
 	        </form>
-			</div>
+			</div> <!-- Form 1 end div -->
 		<div class="secondForm">
 				<h2>Sample Form 2</h2>
 					<div id="myForm2">
@@ -62,7 +70,7 @@
 						<input type="submit" value="Submit"><br>
 					</form>
 				</div>
-		</div>
+		</div> <!-- Form 2 end div -->
 	<!-- Practice Spoiler section -->
 			<div id="spoiler">
 				<h2>Sample Jquery Spoiler</h2><br>
@@ -70,18 +78,12 @@
 				<button id="hide">Hide</button><br><br>
 				<button id="show">Show</button>
 			</div>
-	</div>
+		</div> <!-- Wrapper 1 end div -->
+
 	<div id="wrapper2">
-	<!-- Practice light box section -->
-	<!-- Creates an overlay div for the lightbox to open in -->
-	<div id="lightBox">
-    <p>Click to close</p>
-    <div id="content">
-        <img src="#" />
-    </div>
+ <!-- Practice light box section -->
  <!-- creates the lightbox link selection section -->
-	</div>
-		<div id="lightbox">
+			<div id="lightbox_example">
 			<h1>Light box example</h1>
 				<ul id="imageGallery">
 					<li class="lightBox"><a href="img/evolution1.jpg" class="lightbox_trigger"><img src="img/evolution1.jpg" class="imageBox" alt="Sample Image"></a></li>
@@ -89,7 +91,7 @@
 					<li class="lightBox"><a href="img/skulls.jpg" class="lightbox_trigger"><img src="img/skulls.jpg" class="imageBox" alt="Sample Image"></a></li>
 					<li class="lightBox"><a href="img/screenpick.jpg" class="lightbox_trigger"><img src="img/screenpick.jpg" class="imageBox" alt="Sample Image"></a></li>
 				</ul>
-		</div>
+			</div> <!-- end lightbox div -->
 	<!-- Practice Password entry and confirmation box section -->
 			<div id="passBox">
 				<form id="pass" action="#" method="post">
@@ -112,7 +114,7 @@
 						<input type="submit" value="SUBMIT">
 					</p>
 				</form>
-			</div>
+			</div> <!-- End passbox div -->
 		</div>
 	<footer>
 		<div class="footerLogo">
@@ -122,7 +124,7 @@
 			<a href="mailto:mrde226@uky.edu"><img src="img/email.jpg" alt="Mail Logo" class="social-icon"></a> <!-- email contact link -->
 			<a href="https://twitter.com/mrboneguy"><img src="img/twitter-icon.png" alt="Twitter Logo" class="social-icon"></a>  <!--- twitter profile link -->
 			<a href="https://www.linkedin.com/hp/?dnr=f2gitYi39X1bee1CbWritfQ22vpmS7B0Wy_X&trk=nav_responsive_tab_home"><img src="img/linkedin.png" alt="Linkedin Logo" class="social-icon"></a> <!-- linkedin profile -->
-		</div>
+		</div> <!-- End footer div -->
 	</footer>
 	<script type="text/javascript" src="js/scripts.js" defer></script> <!-- loads JS file after DOM has loaded -->
 

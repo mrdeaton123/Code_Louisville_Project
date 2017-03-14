@@ -22,21 +22,53 @@ $(document).ready(function(){
   });
 });
 
-/* Following code creates a light box when images are clicked on in the page */
-var $overlay=$('<div id="overlay"></div>'); /* Creates a new variable titled overlay and fills it with a new div with id=overlay */
-var $image=$("<img>"); /* Creates a new variable titled image and fills it with a new img tag */
-var $caption=$("<p></p>"); /* Creates a new variable titled caption and fills it with a new paragraph */
-$overlay.append($image); /* Creates an image to append to the overlay */
-$overlay.append($caption); /*Appends the overlay with a caption */
-$("lightBox").append($overlay); /* Adds the overlay proper */
-$("#imageGallery a").click(function(event) { /*targets the id imageGallery links on click and performs following function */
-  event.preventDefault(); /* Prevents the default action */
-  var imageLocation=$(this).attr("href"); /* Creates a new variable that targets the imageLocation attribute href */
-  $image.attr("src", imageLocation); /* Updates overlay with image linked */
-  $overlay.show(); /* Displays the overlay */
-  var captionText=$(this).children("img").attr("alt"); /* gets the alt attribute child and changes to caption */
-  $caption.text(captionText);
-});
-$overlay.click(function() {
-  $overlay.hide();
+jQuery(document).ready(function($) {
+
+	$('.lightbox_trigger').click(function(e) {
+
+		//prevent default action (hyperlink)
+		e.preventDefault();
+
+		//Get clicked link href
+		var image_href = $(this).attr("href");
+
+		/*
+		If the lightbox window HTML already exists in document,
+		change the img src to to match the href of whatever link was clicked
+
+		If the lightbox window HTML doesn't exists, create it and insert it.
+		(This will only happen the first time around)
+		*/
+
+		if ($('#lightbox_overlay').length > 0) { // #lightbox exists
+
+			//place href as img src value
+			$('#content').html('<img src="' + image_href + '" />');
+
+			//show lightbox window - you could use .show('fast') for a transition
+			$('#lightbox_overlay').show('fast');
+		}
+
+		else { //#lightbox does not exist - create and insert (runs 1st time only)
+
+			//create HTML markup for lightbox window
+			var lightbox =
+			'<div id="lightbox_overlay">' +
+				'<p>Click to close</p>' +
+				'<div id="content">' + //insert clicked link's href into img src
+					'<img src="' + image_href +'" />' +
+				'</div>' +
+			'</div>';
+
+			//insert lightbox HTML into page
+			$('body').append(lightbox_overlay);
+		}
+
+	});
+
+	//Click anywhere on the page to get rid of lightbox window
+	$('#lightbox_overlay').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+		$('#lightbox_overlay').hide();
+	});
+
 });
